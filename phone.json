@@ -1,0 +1,25 @@
+{
+  "phones": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "description": "typicode",
+      "image":"dfcjuds",
+      "status":0
+    },
+    {
+      "id": 2,
+      "name": "json-server2",
+      "description": "typicode",
+      "image":"dfcjuds",
+      "status":1
+    },
+    {
+      "id": 3,
+      "name": "json-server",
+      "description": "typicode3",
+      "image":"dfcjuds",
+      "status":1
+    }
+  ]
+}
