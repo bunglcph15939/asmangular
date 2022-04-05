@@ -1,24 +1,52 @@
 
 
-<form action="">
+<form action="" #sanphamForm="ngForm"
+(ngSubmit)="onSubmit(sanphamForm.value)">
   <div class="form-group">
     <label for="">Name</label>
-    <input type="text" class="form-control" name="" id=""   placeholder="Name">
+    <input type="text" class="form-control"  id=""   placeholder="Name"
+    name="name"
+    [(ngModel)]="sanpham.name"
+    #name="ngModel"
+    required
+    >
   </div>
   <div class="form-group">
     <label for="">Description</label>
-    <textarea class="form-control" name="" id="" rows="3"></textarea>
+    <textarea class="form-control" id="" rows="3"
+    name="description"
+    [(ngModel)]="sanpham.description"
+    #description="ngModel"
+    required
+    ></textarea>
   </div>
   <div class="form-group">
     <label for="">Price</label>
-    <input type="number" class="form-control" name="" id="" min="0"  placeholder="Price">
+    <input type="number" class="form-control"  id="" min="0"  placeholder="Price"
+    name="price"
+    [(ngModel)]="sanpham.price"
+    #price="ngModel"
+    required
+    >
   </div>
   <div class="form-group">
     <label for="">Image link</label>
-    <input type="text" class="form-control" name="" id=""   placeholder="Image link">
+    <input type="text" class="form-control"  id=""   placeholder="Image link"
+    name="image"
+    [(ngModel)]="sanpham.image"
+    #image="ngModel"
+    required
+    >
   </div>
   <div class="form-group">
     <label for="">Status</label>
-    <input type="number" class="form-control" name="" id=""   placeholder="Status">
+    <input type="number" class="form-control"  id=""min=0   placeholder="Status"
+    name="status"
+    [(ngModel)]="sanpham.status"
+    #status="ngModel"
+    required
+    >
   </div>
+  <button class="btn btn-success" >Lưu</button>
 </form>
+<button routerLink="/admin/product" class="btn btn-primary mt-2" >Hủy bỏ</button>

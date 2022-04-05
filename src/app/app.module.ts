@@ -10,6 +10,12 @@ import { ProductFormComponent } from './screens/admin/product-form/product-form.
 import { HomeComponent } from './screens/client/home/home.component';
 import { ClientComponent } from './layout/client/client.component';
 import { InfoComponent } from './screens/admin/info/info.component';
+import { SanphamComponent } from './screens/client/sanpham/sanpham.component';
+import { HttpClientModule } from '@angular/common/http';
+import { StatusComponent } from './component/status/status.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SanphamService } from './service/sanpham.service';
+import { DetailComponent } from './screens/client/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +25,24 @@ import { InfoComponent } from './screens/admin/info/info.component';
     ProductFormComponent,
     HomeComponent,
     ClientComponent,
-    InfoComponent
+    InfoComponent,
+    SanphamComponent,
+    StatusComponent,
+    DetailComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
+
+
   ],
-  providers: [],
+  providers: [SanphamService],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

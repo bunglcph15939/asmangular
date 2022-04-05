@@ -1,25 +1,28 @@
 {
   "phones": [
     {
-      "id": 1,
-      "name": "json-server",
-      "description": "typicode",
-      "image":"dfcjuds",
-      "status":0
+      "name": "13 Pro max 256gb88",
+      "description": "Iphone 13promax",
+      "price": 1000,
+      "image": "https://beginer.com/wp-content/uploads/2021/01/top-dien-thoai-chup-anh-dep-nhat-2021-1024x576.jpg",
+      "status": 1,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "json-server2",
-      "description": "typicode",
-      "image":"dfcjuds",
-      "status":1
+      "name": "SamSung",
+      "description": "Samsung note 20",
+      "price": 1000,
+      "image": "https://didongviet.vn/tin-tuc/wp-content/uploads/2019/08/man-hinh-Galaxy-Note-10-1.jpg",
+      "status": 1,
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "json-server",
-      "description": "typicode3",
-      "image":"dfcjuds",
-      "status":1
+      "name": "Iphone",
+      "description": "iphone 14promax",
+      "price": 2000,
+      "image": "https://24hstore.vn/upload_images/images/dien%20thoai%20dau(3).png",
+      "status": 1,
+      "id": 3
     }
   ]
 }
