@@ -1,7 +1,7 @@
 {
   "phones": [
     {
-      "name": "13 Pro max 256gb88",
+      "name": "13 Pro max 256gb",
       "description": "Iphone 13promax",
       "price": 1000,
       "image": "https://beginer.com/wp-content/uploads/2021/01/top-dien-thoai-chup-anh-dep-nhat-2021-1024x576.jpg",
@@ -11,7 +11,7 @@
     {
       "name": "SamSung",
       "description": "Samsung note 20",
-      "price": 1000,
+      "price": 1000000000,
       "image": "https://didongviet.vn/tin-tuc/wp-content/uploads/2019/08/man-hinh-Galaxy-Note-10-1.jpg",
       "status": 1,
       "id": 2
@@ -19,9 +19,9 @@
     {
       "name": "Iphone",
       "description": "iphone 14promax",
-      "price": 2000,
       "image": "https://24hstore.vn/upload_images/images/dien%20thoai%20dau(3).png",
-      "status": 1,
+      "status": 0,
+      "price": 2000,
       "id": 3
     }
   ]

@@ -1,50 +1,46 @@
 
 
-<form action="" #sanphamForm="ngForm"
+<form action="" [formGroup]="sanphamForm"
 (ngSubmit)="onSubmit(sanphamForm.value)">
   <div class="form-group">
     <label for="">Name</label>
     <input type="text" class="form-control"  id=""   placeholder="Name"
     name="name"
-    [(ngModel)]="sanpham.name"
-    #name="ngModel"
-    required
+   formControlName="name"
+   [(ngModel)]="sanpham.name"
     >
   </div>
   <div class="form-group">
     <label for="">Description</label>
     <textarea class="form-control" id="" rows="3"
     name="description"
+    formControlName="description"
     [(ngModel)]="sanpham.description"
-    #description="ngModel"
-    required
     ></textarea>
   </div>
   <div class="form-group">
     <label for="">Price</label>
     <input type="number" class="form-control"  id="" min="0"  placeholder="Price"
     name="price"
+    formControlName="price"
     [(ngModel)]="sanpham.price"
-    #price="ngModel"
-    required
     >
   </div>
   <div class="form-group">
     <label for="">Image link</label>
     <input type="text" class="form-control"  id=""   placeholder="Image link"
     name="image"
+    formControlName="image"
     [(ngModel)]="sanpham.image"
-    #image="ngModel"
-    required
+
     >
   </div>
   <div class="form-group">
     <label for="">Status</label>
     <input type="number" class="form-control"  id=""min=0   placeholder="Status"
     name="status"
+    formControlName="status"
     [(ngModel)]="sanpham.status"
-    #status="ngModel"
-    required
     >
   </div>
   <button class="btn btn-success" >Lưu</button>

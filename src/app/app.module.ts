@@ -16,6 +16,7 @@ import { StatusComponent } from './component/status/status.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SanphamService } from './service/sanpham.service';
 import { DetailComponent } from './screens/client/detail/detail.component';
+import { DetailAdminComponent } from './screens/admin/detail-admin/detail-admin.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DetailComponent } from './screens/client/detail/detail.component';
     InfoComponent,
     SanphamComponent,
     StatusComponent,
-    DetailComponent
+    DetailComponent,
+    DetailAdminComponent
 
   ],
   imports: [

@@ -18,9 +18,9 @@
         <td >{{sp.id}}</td>
         <td>{{sp.name}}</td>
         <td>{{sp.description}}</td>
-        <td><app-status [status]="sp.status"
+        <td><app-st [status]="sp.status"
           (changeStatus)="parentChangstatus($event,sp)"
-          ></app-status></td>
+          ></app-st></td>
           <td>{{sp.price}}</td>
         <td><img src="{{sp.image}}" alt="" width="100px"></td>
         <td> <a routerLink="./form/{{sp.id}}"> <button  class="btn btn-success">Sửa</button></a>

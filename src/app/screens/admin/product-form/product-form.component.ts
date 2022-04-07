@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SanphamService } from 'src/app/service/sanpham.service';
-
+import { FormControl,FormGroup ,Validators} from '@angular/forms';
 @Component({
   selector: 'app-product-form',
   templateUrl: './product-form.component.html',
@@ -9,12 +9,25 @@ import { SanphamService } from 'src/app/service/sanpham.service';
 })
 export class ProductFormComponent implements OnInit {
 id:undefined|number;
-sanpham:any
+sanpham:any;
+sanphamForm:FormGroup;
   constructor(
     private sp:SanphamService,
     private router: Router,
     private activateRoute: ActivatedRoute
-  ) { }
+  ) {
+    this.sanphamForm = new FormGroup({
+      name: new FormControl('', Validators.required),
+      description: new FormControl('', Validators.required),
+      image: new FormControl('', Validators.required),
+      status: new FormControl('', Validators.required),
+      price: new FormControl('', Validators.required)
+
+
+    })
+   }
+
+
 
   ngOnInit(): void {
     this.id = this.activateRoute.snapshot.params['id'];

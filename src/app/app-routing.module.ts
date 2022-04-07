@@ -7,8 +7,10 @@ import { HomeComponent } from './screens/client/home/home.component';
 import { SanphamComponent } from './screens/client/sanpham/sanpham.component';
 import { InfoComponent } from './screens/admin/info/info.component';
 import { DetailComponent } from './screens/client/detail/detail.component';
+import { DetailAdminComponent } from './screens/admin/detail-admin/detail-admin.component';
 
 const routes: Routes = [
+
   {
     path:'admin',
     component:AdminComponent,
@@ -32,7 +34,7 @@ const routes: Routes = [
       },
       {
         path :"sanpham/:id",
-        component:DetailComponent
+        component:DetailAdminComponent
       }
     ]
 

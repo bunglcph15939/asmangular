@@ -12,10 +12,12 @@ sanpham :any;
 
   ngOnInit(): void {
     this.hien()
+
   }
   hien(){
     this.sp.getsanpham().subscribe(data=>{
       this.sanpham=data
     })
+    console.log(this.sanpham)
   }
 }

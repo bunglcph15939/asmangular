@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-status',
+  selector: 'app-st',
   templateUrl: './status.component.html',
   styleUrls: ['./status.component.css']
 })
