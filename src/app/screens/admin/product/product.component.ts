@@ -22,6 +22,7 @@ export class ProductComponent implements OnInit {
   hien(){
     this.sp.getsanpham().subscribe(data=>{
       this.sanpham=data
+      console.log(data)
     })
   }
   dele(id:any){
